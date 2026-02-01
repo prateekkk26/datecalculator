@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -216,5 +217,15 @@ export const Footer = styled.footer`
   text-align: center;
   color: #888;
   font-size: 0.9rem;
+`
+
+export const FooterLink = styled(Link)`
+  color: #888;
+  text-decoration: none;
+  
+  &:hover {
+    color: #4a90e2;
+    text-decoration: underline;
+  }
 `
 
